@@ -57,9 +57,7 @@ const ChatRoom = () => {
     ]);
 
     try {
-      const { isClear, followUpQuestion } = await checkPromptClarity(
-        userMessage.content
-      );
+      const { isClear } = await checkPromptClarity(userMessage.content);
 
       if (!isClear) {
         // setMessages((prevMessages) =>
