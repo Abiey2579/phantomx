@@ -49,7 +49,7 @@ export async function tunePromptWithContext(
       const textChunks = message
         .filter(
           (chunk): chunk is { type: "text"; text: string } =>
-            chunk.type === "text" && typeof (chunk as any).text === "string"
+            chunk.type === "text" && typeof chunk.text === "string"
         )
         .map((chunk) => chunk.text);
       return textChunks.join(" ").trim();

@@ -6,7 +6,6 @@ import {
   Blocks,
   Calendar,
   Command,
-  Home,
   LucideMessageCirclePlus,
   MessageCircleQuestion,
   Search,
