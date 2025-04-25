@@ -7,23 +7,15 @@ import { ArrowUp, GlobeIcon, LightbulbIcon, Mic, PlusIcon } from "lucide-react";
 // import { generateFromOllamaStream } from "@/services/api/chat";
 import { generateFromOllamaStream } from "@/services/api/mistral";
 import ReactMarkdown from "react-markdown";
-import rehypeFormat from "rehype-format";
 import rehypeRaw from "rehype-raw";
-import rehypeSanitize from "rehype-sanitize";
-import rehypeStringify from "rehype-stringify";
-import remarkDirective from "remark-directive";
-import remarkFrontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
 import rehypeKatex from "rehype-katex";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import "katex/dist/katex.min.css"; // for math rendering
 import "highlight.js/styles/github.css"; // for code syntax
-import { unified } from "unified";
 
 import { removeThinkTags } from "@/utils/common";
 import { checkPromptClarity } from "@/services/api/checkPromptClarity";
@@ -156,18 +148,6 @@ const ChatRoom = () => {
       >
         <div className="w-3/4 mx-auto">
           {messages.map((msg) => {
-            const processor = unified()
-              .use(remarkParse)
-              .use(remarkDirective)
-              .use(remarkFrontmatter)
-              .use(remarkGfm)
-              .use(remarkMath)
-              .use(remarkRehype, { allowDangerousHtml: true })
-              .use(rehypeRaw)
-              .use(rehypeFormat)
-              .use(rehypeSanitize)
-              .use(rehypeStringify);
-
             return (
               <div
                 key={msg.id}
