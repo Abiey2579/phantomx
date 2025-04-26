@@ -1,19 +1,19 @@
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import Link from "next/link";
+} from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import Link from 'next/link';
 
 const LoginForm = () => {
   return (
-    <div className={cn("flex flex-col gap-6")}>
+    <div className={cn('flex flex-col gap-6')}>
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
@@ -39,7 +39,7 @@ const LoginForm = () => {
                 </div>
                 <Input id="password" type="password" required />
               </div>
-              <Link href={"/dashboard"}>
+              <Link href={'/chat'}>
                 <Button type="button" className="w-full">
                   Login
                 </Button>
