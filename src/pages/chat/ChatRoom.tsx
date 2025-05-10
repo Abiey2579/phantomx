@@ -15,7 +15,7 @@ import 'highlight.js/styles/github.css';
 import { removeThinkTags } from '@/utils/common';
 import { tunePromptWithContext } from '@/services/api/tunePromptWithContext';
 import ChatInput from '@/features/chat/chat-input';
-import ActivityIndicator from './activity-indicator';
+import ActivityIndicator from '../../features/chat/activity-indicator';
 
 interface Message {
   id: number;
@@ -24,7 +24,7 @@ interface Message {
   isLoading?: boolean;
 }
 
-const Chat = () => {
+const ChatRoom = () => {
   const [messages, setMessages] = useState<Message[]>([
     { id: 1, sender: 'ai', content: 'Hi! How can I assist you today?' },
   ]);
@@ -153,4 +153,4 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+export default ChatRoom;

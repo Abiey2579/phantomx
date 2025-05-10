@@ -1,5 +1,5 @@
-import { AppSidebar } from '@/features/app-sidebar';
-import { NavActions } from '@/features/nav-actions';
+import { AppSidebar } from '@/features/chat/app-sidebar';
+import { NavActions } from '@/features/chat/nav-actions';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,9 +12,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from '@/components/ui/sidebar';
-import Chat from '@/pages/chat/chat';
+import ChatRoom from '@/pages/chat/ChatRoom';
 
-export default function Page() {
+export default function ChatLayout() {
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -40,7 +40,7 @@ export default function Page() {
             <NavActions />
           </div>
         </header>
-        <Chat />
+        <ChatRoom />
       </SidebarInset>
     </SidebarProvider>
   );
