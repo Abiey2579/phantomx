@@ -29,8 +29,8 @@ const Hero = () => {
         </div>
         <div className="mt-12 flex flex-col items-center gap-4 lg:mt-16">
           <p className="text-muted-foreground text-center text-sm">
-            Designed for analysts, consultants, and institutions shaping the
-            future
+            Designed for finance analysts, consultants, and institutions shaping
+            the future
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 opacity-80">
             {companyLogos.map((company) => (
@@ -39,6 +39,8 @@ const Hero = () => {
                 src={company.url}
                 alt={company.alt}
                 className="h-7 transition-opacity hover:opacity-100"
+                width={160}
+                height={28}
               />
             ))}
           </div>
