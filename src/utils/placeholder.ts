@@ -5,29 +5,6 @@ import {
   Search,
 } from 'lucide-react';
 
-export const companyLogos = [
-  {
-    url: 'https://library.shadcnblocks.com/images/block/logos/shadcn-ui-wordmark.svg',
-    alt: 'ShadCN UI',
-  },
-  {
-    url: 'https://library.shadcnblocks.com/images/block/logos/vercel-wordmark.svg',
-    alt: 'Vercel',
-  },
-  {
-    url: 'https://library.shadcnblocks.com/images/block/logos/react-icon.svg',
-    alt: 'React',
-  },
-  {
-    url: 'https://library.shadcnblocks.com/images/block/logos/supabase-wordmark.svg',
-    alt: 'Supabase',
-  },
-  {
-    url: 'https://library.shadcnblocks.com/images/block/logos/tailwind-wordmark.svg',
-    alt: 'Tailwind CSS',
-  },
-];
-
 export const NavbarData = {
   teams: [
     {

@@ -12,7 +12,7 @@ const Navbar = () => {
         <h1 className="text-2xl font-semibold">PhantomX</h1>
       </div>
       <Button asChild size="lg">
-        <a href={'/login'}>Log In</a>
+        <a href={'/demo'}>Try a Demo </a>
       </Button>
     </section>
   );

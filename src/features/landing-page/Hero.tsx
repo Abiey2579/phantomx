@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
-import { companyLogos } from '@/utils/placeholder';
-import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -21,29 +19,11 @@ const Hero = () => {
         </div>
         <div className="mt-10 flex items-center gap-3 place-self-center">
           <Button asChild size="lg">
-            <a href={'/'}>Request a Demo</a>
+            <a href={'/demo'}>Try a Demo</a>
           </Button>
           <Button asChild size="lg" variant={'outline'}>
-            <a href={'/'}>Explore PhantomX</a>
+            <a href={'mailto:mbyahya2579@gmail.com'}>Contact Us</a>
           </Button>
-        </div>
-        <div className="mt-12 flex flex-col items-center gap-4 lg:mt-16">
-          <p className="text-muted-foreground text-center text-sm">
-            Designed for finance analysts, consultants, and institutions shaping
-            the future
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-80">
-            {companyLogos.map((company) => (
-              <Image
-                key={company.url}
-                src={company.url}
-                alt={company.alt}
-                className="h-7 transition-opacity hover:opacity-100"
-                width={160}
-                height={28}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
