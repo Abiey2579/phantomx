@@ -1,11 +1,17 @@
-import { Hero } from '@/features/landing-page/Hero';
-import Navbar from '@/features/landing-page/Navbar';
+import Feature1 from '@/features/LandingPage/Feature1';
+import Feature2 from '@/features/LandingPage/Feature2';
+import ForWho from '@/features/LandingPage/ForWho';
+import { Hero } from '@/features/LandingPage/Hero';
+import { Navbar } from '@/features/LandingPage/Navbar';
 
 const LandingPage = () => {
   return (
     <div className="">
       <Navbar />
       <Hero />
+      <Feature1 />
+      <Feature2 />
+      <ForWho />
     </div>
   );
 };
