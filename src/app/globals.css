@@ -218,6 +218,10 @@ td {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-primary: #0a2342;
+  --color-secondary: #4a90e2;
+  --color-accent: #fafafa;
 }
 
 :root {
