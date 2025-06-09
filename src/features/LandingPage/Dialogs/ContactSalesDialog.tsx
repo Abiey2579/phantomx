@@ -12,7 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 const ContactSalesDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button variant={'outline'}>Contact Sale</Button>
       </DialogTrigger>
       <DialogContent>

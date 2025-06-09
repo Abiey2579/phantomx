@@ -73,7 +73,13 @@ const Navbar = ({
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <Image src={logo.src} className="max-h-8" alt={logo.alt} />
+              <Image
+                src={logo.src}
+                className="max-h-8"
+                width={32}
+                alt={logo.alt}
+                height={32}
+              />
               <span className="text-xl font-semibold tracking-tighter">
                 {logo.title}
               </span>
@@ -98,7 +104,13 @@ const Navbar = ({
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <Image src={logo.src} className="max-h-8" alt={logo.alt} />
+              <Image
+                src={logo.src}
+                className="max-h-8"
+                alt={logo.alt}
+                width={32}
+                height={32}
+              />
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -114,6 +126,8 @@ const Navbar = ({
                         src={logo.src}
                         className="max-h-8"
                         alt={logo.alt}
+                        width={32}
+                        height={32}
                       />
                     </a>
                   </SheetTitle>

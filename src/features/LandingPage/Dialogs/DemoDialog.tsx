@@ -18,7 +18,7 @@ import { Textarea } from '@/components/ui/textarea';
 const DemoDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button>Schedule your Demo</Button>
       </DialogTrigger>
       <DialogContent>
