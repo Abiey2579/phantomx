@@ -1,4 +1,4 @@
-import { Menu } from 'lucide-react';
+import { GalleryVerticalEnd, Menu } from 'lucide-react';
 
 import {
   Accordion,
@@ -73,13 +73,9 @@ const Navbar = ({
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <Image
-                src={logo.src}
-                className="max-h-8"
-                width={32}
-                alt={logo.alt}
-                height={32}
-              />
+              <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
+                <GalleryVerticalEnd className="size-4" />
+              </div>
               <span className="text-xl font-semibold tracking-tighter">
                 {logo.title}
               </span>
