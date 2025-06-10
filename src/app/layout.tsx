@@ -1,4 +1,5 @@
 // app/layout.tsx
+import { Toaster } from '@/components/ui/sonner';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
